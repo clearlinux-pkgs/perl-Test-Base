@@ -4,7 +4,7 @@
 #
 Name     : perl-Test-Base
 Version  : 0.89
-Release  : 12
+Release  : 13
 URL      : https://cpan.metacpan.org/authors/id/I/IN/INGY/Test-Base-0.89.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/I/IN/INGY/Test-Base-0.89.tar.gz
 Summary  : 'A Data Driven Testing Framework'
