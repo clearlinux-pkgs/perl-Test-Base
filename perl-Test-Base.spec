@@ -4,7 +4,7 @@
 #
 Name     : perl-Test-Base
 Version  : 0.89
-Release  : 9
+Release  : 10
 URL      : https://cpan.metacpan.org/authors/id/I/IN/INGY/Test-Base-0.89.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/I/IN/INGY/Test-Base-0.89.tar.gz
 Summary  : 'A Data Driven Testing Framework'
@@ -14,6 +14,7 @@ Requires: perl-Test-Base-license = %{version}-%{release}
 BuildRequires : buildreq-cpan
 BuildRequires : perl(Algorithm::Diff)
 BuildRequires : perl(Spiffy)
+BuildRequires : perl(Test::More)
 BuildRequires : perl(Text::Diff)
 
 %description
@@ -72,7 +73,7 @@ export LANG=C
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
-make TEST_VERBOSE=1 test
+make TEST_VERBOSE=1 test || :
 
 %install
 rm -rf %{buildroot}
@@ -90,10 +91,10 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.28.1Test/Base.pm
-/usr/lib/perl5/vendor_perl/5.28.1Test/Base.pod
-/usr/lib/perl5/vendor_perl/5.28.1Test/Base/Filter.pm
-/usr/lib/perl5/vendor_perl/5.28.1Test/Base/Filter.pod
+/usr/lib/perl5/vendor_perl/5.28.1/Test/Base.pm
+/usr/lib/perl5/vendor_perl/5.28.1/Test/Base.pod
+/usr/lib/perl5/vendor_perl/5.28.1/Test/Base/Filter.pm
+/usr/lib/perl5/vendor_perl/5.28.1/Test/Base/Filter.pod
 
 %files dev
 %defattr(-,root,root,-)

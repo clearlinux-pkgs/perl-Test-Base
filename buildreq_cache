@@ -1,4 +1,5 @@
 0.89
 perl(Algorithm::Diff)
 perl(Spiffy)
+perl(Test::More)
 perl(Text::Diff)
