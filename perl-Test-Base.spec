@@ -4,10 +4,10 @@
 #
 Name     : perl-Test-Base
 Version  : 0.89
-Release  : 16
+Release  : 17
 URL      : https://cpan.metacpan.org/authors/id/I/IN/INGY/Test-Base-0.89.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/I/IN/INGY/Test-Base-0.89.tar.gz
-Summary  : 'A Data Driven Testing Framework'
+Summary  : A Data Driven Testing Framework
 Group    : Development/Tools
 License  : Artistic-1.0 Artistic-1.0-Perl GPL-1.0
 Requires: perl-Test-Base-license = %{version}-%{release}
@@ -39,6 +39,7 @@ return MyProject->do_something(shift);
 Summary: dev components for the perl-Test-Base package.
 Group: Development
 Provides: perl-Test-Base-devel = %{version}-%{release}
+Requires: perl-Test-Base = %{version}-%{release}
 
 %description dev
 dev components for the perl-Test-Base package.
@@ -91,10 +92,10 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.28.1//Test/Base.pm
-/usr/lib/perl5/vendor_perl/5.28.1//Test/Base.pod
-/usr/lib/perl5/vendor_perl/5.28.1//Test/Base/Filter.pm
-/usr/lib/perl5/vendor_perl/5.28.1//Test/Base/Filter.pod
+/usr/lib/perl5/vendor_perl/5.28.2/Test/Base.pm
+/usr/lib/perl5/vendor_perl/5.28.2/Test/Base.pod
+/usr/lib/perl5/vendor_perl/5.28.2/Test/Base/Filter.pm
+/usr/lib/perl5/vendor_perl/5.28.2/Test/Base/Filter.pod
 
 %files dev
 %defattr(-,root,root,-)
