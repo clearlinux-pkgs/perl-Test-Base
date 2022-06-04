@@ -4,7 +4,7 @@
 #
 Name     : perl-Test-Base
 Version  : 0.89
-Release  : 33
+Release  : 34
 URL      : https://cpan.metacpan.org/authors/id/I/IN/INGY/Test-Base-0.89.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/I/IN/INGY/Test-Base-0.89.tar.gz
 Summary  : 'A Data Driven Testing Framework'
@@ -115,7 +115,4 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.34.0/Test/Base.pm
-/usr/lib/perl5/vendor_perl/5.34.0/Test/Base.pod
-/usr/lib/perl5/vendor_perl/5.34.0/Test/Base/Filter.pm
-/usr/lib/perl5/vendor_perl/5.34.0/Test/Base/Filter.pod
+/usr/lib/perl5/*
